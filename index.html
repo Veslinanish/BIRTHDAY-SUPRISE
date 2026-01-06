@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Avelin 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ================= PASSWORD SCREEN ================= -->
+<div class="screen active" id="lock">
+  <h1>💝 A Special Gift 💝</h1>
+  <p>Enter your name to open</p>
+
+  <input type="text" id="password" placeholder="Enter name">
+  <button onclick="unlock()">Unlock 🎁</button>
+</div>
+
+<!-- ================= GIFT SCREEN ================= -->
+<div class="screen" id="gift">
+  <p class="instruction">Tap the Gift 🎁</p>
+
+  <div class="gift-container" onclick="openGift()">
+    <div class="lid"></div>
+
+    <div class="box">
+      <div class="ribbon-v"></div>
+      <div class="ribbon-h"></div>
+
+      <!-- LETTER INSIDE GIFT -->
+      <div class="letter">
+        <h1>Happy Birthday 💕</h1>
+        <h2>AVELIN MARY</h2>
+        <button onclick="nextPage(event)">Read More 💌</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= STORY SCREEN ================= -->
+<div class="screen" id="story">
+  <div class="card">
+    <p id="storyText"></p>
+    <button onclick="nextStory()">Next 💖</button>
+  </div>
+</div>
+
+<!-- ================= FINAL SCREEN ================= -->
+<div class="screen" id="final">
+  <h1>🎉 Happy Birthday Avelin Mary 🎉</h1>
+  <p>You are my today, my tomorrow, my forever 💖</p>
+</div>
+
+<!-- DECORATIONS -->
+<div class="hearts"></div>
+<div class="fireworks"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
